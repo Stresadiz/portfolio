@@ -20,7 +20,7 @@
 }
 
 body {
-  background-color: rgb(69, 63, 63);
+  background-color: #1d1d1d;
   color: white;
 }
 
@@ -28,7 +28,7 @@ body {
     General Style
 */
 header {
-  background-color: rgb(47, 46, 43);
+  background-color: rgb(22, 19, 19);
 }
 header nav {
   text-align: center;
@@ -41,6 +41,12 @@ header nav h4 {
   font-weight: 300;
   font-size: smaller;
   line-height: 1.5em;
+  color: rgb(164, 255, 250);
+}
+
+main hr {
+  width: 80%;
+  margin: auto;
 }
 
 .section {
@@ -57,7 +63,7 @@ header nav h4 {
 }
 .section--text {
   line-height: 1.2em;
-  color: rgb(185, 183, 183);
+  color: gray;
   padding: 1em 0 1em 0;
 }
 .section--list {
@@ -65,11 +71,26 @@ header nav h4 {
 }
 .section--list a {
   text-decoration: none;
-  color: rgb(191, 152, 80);
+  color: rgb(164, 255, 250);
+}
+.section--list a:hover {
+  opacity: 0.5;
+  transition: 1s;
 }
 .section--img {
-  padding: 2em 0em 1em 0em;
-  border-bottom: 1px solid rgb(185, 183, 183);
+  padding: 0em 0em 0em 0em;
+  max-height: 20em;
+  max-width: 80%;
+  margin: auto;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.section--img:hover {
+  transition: 2s;
+  transform: scale(1.1);
+}
+.section hr {
+  margin: 1em auto;
 }
 
 /*# sourceMappingURL=styles.css.map */
