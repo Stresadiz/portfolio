@@ -43,8 +43,33 @@ header nav h4 {
   line-height: 1.5em;
 }
 
-.about {
+.section {
   padding: 1em;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.section--title {
+  text-align: left;
+  font-weight: 200;
+  line-height: 1.5em;
+}
+.section--text {
+  line-height: 1.2em;
+  color: rgb(185, 183, 183);
+  padding: 1em 0 1em 0;
+}
+.section--list {
+  list-style: none;
+}
+.section--list a {
+  text-decoration: none;
+  color: rgb(191, 152, 80);
+}
+.section--img {
+  padding: 2em 0em 1em 0em;
+  border-bottom: 1px solid rgb(185, 183, 183);
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -16,6 +16,8 @@
 $color-one:white;
 $color-two:rgb(69, 63, 63);
 $color-three:rgb(47, 46, 43);
+$color-four:rgb(185 183 183);
+$color-five:rgb(191, 152, 80);
 
 /*
 
@@ -55,6 +57,37 @@ header{
     }
 }
 
-.about{
+.section{
     padding: 1em;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    &--title{
+        text-align: left;
+        font-weight: 200;
+        line-height: 1.5em;
+    }
+
+    &--text{
+        line-height: 1.2em;
+        color: $color-four;
+        padding: 1em 0 1em 0;
+    }
+
+    &--list{
+        list-style: none;
+
+        a{
+            text-decoration: none;
+            color: $color-five;
+        }
+    }
+
+    &--img{
+        padding: 2em 0em 1em 0em;
+        border-bottom: 1px solid $color-four;
+    }
+
 }
