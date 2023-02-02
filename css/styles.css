@@ -1,0 +1,50 @@
+/*
+    Portfolio Style Sheets
+
+    Mobile First style
+
+*/
+/*
+
+    Global Vars
+
+*/
+/*
+
+    Golbal Style
+
+*/
+* {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background-color: rgb(69, 63, 63);
+  color: white;
+}
+
+/*
+    General Style
+*/
+header {
+  background-color: rgb(47, 46, 43);
+}
+header nav {
+  text-align: center;
+  padding: 1em 1em 1em 1em;
+}
+header nav h1 {
+  font-weight: 300;
+}
+header nav h4 {
+  font-weight: 300;
+  font-size: smaller;
+  line-height: 1.5em;
+}
+
+.about {
+  padding: 1em;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,60 @@
+/*
+    Portfolio Style Sheets
+
+    Mobile First style
+
+*/
+
+
+
+/*
+
+    Global Vars
+
+*/
+
+$color-one:white;
+$color-two:rgb(69, 63, 63);
+$color-three:rgb(47, 46, 43);
+
+/*
+
+    Golbal Style
+
+*/
+
+*{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: $color-two;
+    color: $color-one;
+}
+
+
+/*
+    General Style
+*/
+
+header{
+    background-color: $color-three;
+    nav{
+        text-align: center;
+        padding: 1em 1em 1em 1em;
+        
+        h1{
+            font-weight: 300;
+        }
+        h4{
+            font-weight: 300;
+            font-size: smaller;
+            line-height: 1.5em;
+        }
+    }
+}
+
+.about{
+    padding: 1em;
+}
