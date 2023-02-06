@@ -22,7 +22,30 @@
 body {
   background-color: #1d1d1d;
   color: white;
+  box-sizing: border-box;
   overflow-x: hidden;
+}
+
+@media screen and (max-width: 600px) {
+  .social {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .social--links {
+    padding: 0 !important;
+  }
+  .social--links a {
+    padding: 0.5em 0.2em !important;
+  }
+}
+@media screen and (min-width: 600px) {
+  .btn {
+    width: 10em !important;
+    text-align: center;
+  }
+}
+#body {
+  overflow: hidden;
 }
 
 #menu {

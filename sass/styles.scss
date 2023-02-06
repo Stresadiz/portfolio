@@ -33,10 +33,36 @@ $color-five:rgb(164, 255, 250);
 body{
     background-color: $color-two;
     color: $color-one;
+    box-sizing: border-box;
     overflow-x: hidden;
 }
 
 
+@media screen and (max-width:600px) {
+    
+    .social{
+        display: flex;
+        justify-content: space-evenly;
+        &--links{
+            padding: 0 !important;
+            a{
+                padding: 0.5em 0.2em !important;
+            }
+        }
+        
+    }
+}
+
+@media screen and (min-width:600px) {
+    .btn{
+        width: 10em !important;
+        text-align: center;
+    }
+
+}
+#body{
+    overflow: hidden;
+}
 
 #menu{
     position: absolute;
