@@ -33,86 +33,140 @@ $color-five:rgb(164, 255, 250);
 body{
     background-color: $color-two;
     color: $color-one;
+    overflow-x: hidden;
 }
 
 
-/*
-    General Style
-*/
 
-header{
-    background-color: $color-three;
-    nav{
-        text-align: center;
-        padding: 1em 1em 1em 1em;
-        
-        h1{
-            font-weight: 300;
-        }
-        h4{
-            font-weight: 300;
-            font-size: smaller;
-            line-height: 1.5em;
-            color: $color-five;
-        }
-    }
+#menu{
+    position: absolute;
+    top: -5em;
+    right: -5em;
+    z-index: 100;
+    background-color: rgb(20, 162, 194);
+    width: 10.5em;
+    height: 10.5em;
+    border-bottom-left-radius: 50%;
+}
+
+
+#line--h1{
+    width: 2em;
+    height: 4px;
+    background-color: white;
+    position: absolute;
+    top: 7em;
+    right: 6em;
+}
+#line--h2{
+    width: 2em;
+    height: 4px;
+    background-color: white;
+    position: absolute;
+    top: 6.5em;
+    right: 6em;
+}
+#line--h3{
+    width: 2em;
+    height: 4px;
+    background-color: white;
+    position: absolute;
+    top: 7.5em;
+    right: 6em;
+}
+
+.rotate{
+    transform-origin: 50% 50% ;
+    transition: 1s ;
+}
+
+.line--rotate45{
+    transform: rotate(45deg);
+    right: 6em;
+    top:7em;
+}
+
+.line--rotate-45{
+    transform: rotate(-45deg);
+    right: 6em !important;
+    top:7em !important;
+}
+
+.line--display{
+    display: none;
 }
 
 main{
-    hr{
-        width: 80%;
-        margin: auto;
+    padding: 5em 5em;
+}
+
+.container{
+    padding: 2em 1em;
+    border: 1px solid white;
+    margin: 0.6em 0 1em 0;
+
+    &__subtitle{
+        color: rgb(20, 162, 194);
+        padding: 1em 0;
+    }
+
+    &__title{
+        font-size:3em;
+        color: rgb(207, 242, 250);
+    }
+
+    &__text{
+        color: rgb(207, 242, 250);
+        padding: 2em 4em 2em 0;
+    }
+
+    &__btn{
+        padding: 1em;
     }
 }
 
-.section{
-    padding: 1em;
-    box-sizing: border-box;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
+.opacity{
+    opacity: 0.5;
+}
 
-    &--title{
-        text-align: left;
-        font-weight: 200;
-        line-height: 1.5em;
-    }
-
-    &--text{
-        line-height: 1.2em;
-        color: $color-four;
-        padding: 1em 0 1em 0;
-    }
-
-    &--list{
-        list-style: none;
-
+.social{
+    background-color: rgb(22, 19, 19);
+    position: absolute;
+    top: 0;
+    right: 0em;
+    padding: 3em 5em 2.15em 12em;
+    width: 88%;
+    height: 1.7em;
+    font-size: small;
+    &--links{
+        padding: 1em;
         a{
             text-decoration: none;
-            color: $color-five;
-
+            color: rgba(255, 255, 255, 0.517);
+            border: 1px solid rgb(22, 19, 19);
+            padding: 0.5em 2em;
             &:hover{
-                opacity: 0.5;
+                border: 1px solid rgb(53, 203, 206);
+                color: white;
                 transition: 1s;
             }
         }
     }
-
-    &--img{
-        padding: 0em 0em 0em 0em;
-        max-height: 20em;
-        max-width: 80%;
-        margin: auto;
-        box-sizing: border-box;
-        overflow: hidden;
-
-        &:hover{
-            transition: 2s;
-            transform: scale(1.1);
-        }
+    &--hide{
+        right: -140%;
     }
+}
 
-    hr{
-        margin: 1em auto;
+.btn{
+    background-color: inherit;
+    border: 1px solid rgb(77, 213, 243);
+    padding: 1em 4em 1em 4em;
+    color:rgb(77, 213, 243);
+    text-decoration: none;
+    margin: 2em 0 ;
+    &:hover{
+        color: black;
+        background-color: rgb(77, 213, 243);
+        transition: 1s;
     }
 }
