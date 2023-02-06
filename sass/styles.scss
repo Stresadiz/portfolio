@@ -115,6 +115,10 @@ main{
         color: rgb(207, 242, 250);
     }
 
+    &--variant{
+        margin: 1em 0 0 0;
+    }
+
     &__text{
         color: rgb(207, 242, 250);
         padding: 2em 4em 2em 0;
@@ -163,10 +167,33 @@ main{
     padding: 1em 4em 1em 4em;
     color:rgb(77, 213, 243);
     text-decoration: none;
-    margin: 2em 0 ;
+    margin: 4em 0 ;
     &:hover{
         color: black;
         background-color: rgb(77, 213, 243);
         transition: 1s;
+    }
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    .container__text{
+        padding: 0 !important;
+        width: 100%;
+    }
+    
+}
+
+.card{
+    margin: 1em 0;
+    width: 100%;
+    .btn{
+        width: 100%;
+    }
+
+    .container__text{
+        margin: 2em 0;
     }
 }
