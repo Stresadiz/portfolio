@@ -35,8 +35,8 @@ body{
     color: $color-one;
     box-sizing: border-box;
     overflow-x: hidden;
-}
 
+}
 
 @media screen and (max-width:600px) {
     
@@ -123,13 +123,12 @@ body{
 }
 
 main{
-    padding: 5em 3em;
+    padding: 5em 2em;
     overflow-y: hidden;
 }
 
 .container{
-    padding: 2em 1em;
-    border: 1px solid white;
+    padding: 2em 0.5em;
     margin: 0.6em 0 1em 0;
     overflow-wrap: break-word;
 
@@ -226,6 +225,19 @@ main{
     .container__text{
         margin: 2em 0;
     }
+}
+
+.ice-cube{
+    background-size: contain;
+    background-image: url(../img/ice-cube.png);
+    height: 30%;
+    background-position:center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 31%;
+    right: 2em;
+    width: 30%;
+    opacity: 0.1;
 }
 
 .burbuja{
